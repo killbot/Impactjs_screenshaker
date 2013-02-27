@@ -106,6 +106,7 @@ ScreenShaker = ig.Class.extend({
             }
         }
         this.spring.update();
+        this.shakeScreen(ig.game.screen);
     },
     shakeScreen: function(screenPos){
         screenPos.x = screenPos.x - this.spring.lastPos.x + this.spring.pos.x;
